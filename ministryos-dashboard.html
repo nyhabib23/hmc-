@@ -1,0 +1,217 @@
+cco<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hebron Methodist Church - Dashboard</title>
+    <link rel="stylesheet" href="ministryos-style.css">
+</head>
+<body class="dashboard-body">
+    <div class="dashboard-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="ministry-logo">
+                    <span class="logo-icon">✝️</span>
+                    <span class="logo-text">Hebron Methodist Church</span>
+                </div>
+                <button class="menu-toggle">☰</button>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#quick-launch" class="nav-item active">
+                    <span class="nav-icon">⚡</span>
+                    <span class="nav-text">Quick Launch</span>
+                </a>
+                <a href="#dashboard" class="nav-item">
+                    <span class="nav-icon">📊</span>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                <a href="#accounts" class="nav-item expandable">
+                    <span class="nav-icon">📁</span>
+                    <span class="nav-text">Accounts</span>
+                    <span class="nav-arrow">›</span>
+                </a>
+                <a href="#church-setup" class="nav-item expandable">
+                    <span class="nav-icon">🔄</span>
+                    <span class="nav-text">Church Ref. Setup</span>
+                    <span class="nav-arrow">›</span>
+                </a>
+                <a href="#membership" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span class="nav-text">Membership</span>
+                </a>
+                <a href="#finance" class="nav-item expandable">
+                    <span class="nav-icon">💰</span>
+                    <span class="nav-text">Church Finance</span>
+                    <span class="nav-arrow">›</span>
+                </a>
+                <a href="#events" class="nav-item expandable">
+                    <span class="nav-icon">📅</span>
+                    <span class="nav-text">Church Events</span>
+                    <span class="nav-arrow">›</span>
+                </a>
+                <a href="#attendance" class="nav-item expandable">
+                    <span class="nav-icon">✓</span>
+                    <span class="nav-text">Attendance</span>
+                    <span class="nav-arrow">›</span>
+                </a>
+                <a href="#disciplinary" class="nav-item">
+                    <span class="nav-icon">🔧</span>
+                    <span class="nav-text">Disciplinary Actions</span>
+                </a>
+                <a href="#evangelism" class="nav-item">
+                    <span class="nav-icon">✝️</span>
+                    <span class="nav-text">Evangelism List</span>
+                </a>
+                <a href="#visitors" class="nav-item">
+                    <span class="nav-icon">👤</span>
+                    <span class="nav-text">Visitors Log</span>
+                </a>
+                
+                <div class="nav-section-title">HR/PAYROLL</div>
+            </nav>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <div class="church-info">
+                    <div class="church-logo-small">
+                        <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="#4169E1"/>
+                            <text x="20" y="28" font-size="20" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">IK</text>
+                        </svg>
+                    </div>
+                    <span class="church-name">Demo Church</span>
+                </div>
+                
+                <div class="top-bar-actions">
+                    <button class="icon-btn">💬</button>
+                    <button class="icon-btn notification-btn">
+                        🔔
+                        <span class="notification-badge">1</span>
+                    </button>
+                    <button class="icon-btn">⚙️</button>
+                    <div class="user-menu">
+                        <div class="user-avatar">
+                            <svg viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="20" cy="20" r="20" fill="#4169E1"/>
+                                <text x="20" y="28" font-size="20" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">IK</text>
+                            </svg>
+                        </div>
+                        <span class="user-name">Demo</span>
+                        <span class="dropdown-arrow">▼</span>
+                    </div>
+                </div>
+            </header>
+            
+            <!-- Quick Launch Grid -->
+            <section id="quick-launch-section" class="content-section">
+                <div class="feature-grid">
+                    <div class="feature-card blue-border">
+                        <div class="feature-icon blue-icon">📊</div>
+                        <h3 class="feature-title">Dashboard</h3>
+                        <p class="feature-description">Your personalized overview and analytics</p>
+                    </div>
+                    
+                    <div class="feature-card purple-border">
+                        <div class="feature-icon purple-icon">👥</div>
+                        <h3 class="feature-title">Chart of Accounts</h3>
+                        <p class="feature-description">Manage all ledgers</p>
+                    </div>
+                    
+                    <div class="feature-card cyan-border">
+                        <div class="feature-icon cyan-icon">💵</div>
+                        <h3 class="feature-title">Payments</h3>
+                        <p class="feature-description">Receive and print receipts for payment</p>
+                    </div>
+                    
+                    <div class="feature-card blue-border">
+                        <div class="feature-icon blue-icon">🧾</div>
+                        <h3 class="feature-title">Expenditure</h3>
+                        <p class="feature-description">Create, manage, track and control expenses</p>
+                    </div>
+                    
+                    <div class="feature-card yellow-border">
+                        <div class="feature-icon yellow-icon">📚</div>
+                        <h3 class="feature-title">Reference</h3>
+                        <p class="feature-description">This where all reference data is created and managed</p>
+                    </div>
+                    
+                    <div class="feature-card orange-border">
+                        <div class="feature-icon orange-icon">👔</div>
+                        <h3 class="feature-title">Staff</h3>
+                        <p class="feature-description">Record staff details here</p>
+                    </div>
+                    
+                    <div class="feature-card blue-border">
+                        <div class="feature-icon blue-icon">🏦</div>
+                        <h3 class="feature-title">Bank Transaction</h3>
+                        <p class="feature-description">Record bank deposit and withdrawal</p>
+                    </div>
+                    
+                    <div class="feature-card purple-border">
+                        <div class="feature-icon purple-icon">📈</div>
+                        <h3 class="feature-title">Reports</h3>
+                        <p class="feature-description">Generate detailed analytics</p>
+                    </div>
+                    
+                    <div class="feature-card cyan-border">
+                        <div class="feature-icon cyan-icon">💬</div>
+                        <h3 class="feature-title">Messages</h3>
+                        <p class="feature-description">Communicate with your customers and suppliers</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Analytics Dashboard -->
+            <section id="analytics-section" class="content-section" style="display: none;">
+                <div class="alert-banner">
+                    👋 Sorry, you do not have enough SMS credit to send messages! <a href="#">Click here</a> to purchase a new bundle
+                </div>
+                
+                <div class="dashboard-header">
+                    <div class="dashboard-title-section">
+                        <span class="dashboard-icon">⛪</span>
+                        <h2 class="dashboard-title">Church Analytics Dashboard</h2>
+                    </div>
+                    <div class="dashboard-date">
+                        <span>10/18/2025</span>
+                        <button class="calendar-btn">📅</button>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card yellow-stat">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">Total Members</p>
+                        <p class="stat-change positive">↑ 12% from last month</p>
+                    </div>
+                    
+                    <div class="stat-card yellow-stat">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">New Members (Last Year)</p>
+                        <p class="stat-change positive">↑ 8% from previous year</p>
+                    </div>
+                    
+                    <div class="stat-card green-stat">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">Active Members (0%)</p>
+                        <p class="stat-change positive">↑ 5% from last quarter</p>
+                    </div>
+                    
+                    <div class="stat-card yellow-stat">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">Active Departments</p>
+                        <p class="stat-change positive">↑ 2 new this year</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="ministryos-script.js"></script>
+</body>
+</html>

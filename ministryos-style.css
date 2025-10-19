@@ -1,0 +1,597 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Login Page Styles */
+.login-body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.login-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+.login-left-panel {
+    flex: 1;
+    background: linear-gradient(135deg, #D4A017 0%, #B8860B 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
+.logo-container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.church-logo svg {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.login-right-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #ffffff;
+}
+
+.login-form-container {
+    width: 100%;
+    max-width: 500px;
+}
+
+.portal-title {
+    font-size: 2.5rem;
+    color: #8B0000;
+    margin-bottom: 10px;
+    font-weight: 600;
+    border-bottom: 3px solid #D4A017;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+    font-size: 1rem;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: #FFF8DC;
+    border: 2px solid #D4A017;
+    border-radius: 8px;
+    padding: 12px 15px;
+}
+
+.input-icon {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.input-wrapper input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    font-size: 1rem;
+    outline: none;
+    color: #333;
+}
+
+.input-wrapper input::placeholder {
+    color: #999;
+}
+
+.toggle-password {
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-left: 10px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, #D4A017 0%, #B8860B 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-top: 10px;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 160, 23, 0.4);
+}
+
+.stewardship-section {
+    margin-top: 40px;
+    padding: 25px;
+    background: #FFF8DC;
+    border-radius: 10px;
+    border-left: 4px solid #D4A017;
+}
+
+.stewardship-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.stewardship-section h3 {
+    color: #8B0000;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.stewardship-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Dashboard Styles */
+.dashboard-body {
+    background: #f8f9fa;
+}
+
+.dashboard-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 280px;
+    background: white;
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.sidebar-header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.ministry-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+    background: linear-gradient(135deg, #D4A017 0%, #B8860B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.logo-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #D4A017 0%, #B8860B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+}
+
+.sidebar-nav {
+    padding: 10px 0;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #555;
+    text-decoration: none;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background: #f5f5f5;
+    color: #7B3FF2;
+}
+
+.nav-item.active {
+    background: #f0e6ff;
+    color: #7B3FF2;
+    border-left: 3px solid #7B3FF2;
+}
+
+.nav-icon {
+    font-size: 1.2rem;
+    margin-right: 12px;
+    width: 24px;
+}
+
+.nav-text {
+    flex: 1;
+    font-size: 0.95rem;
+}
+
+.nav-arrow {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.nav-section-title {
+    padding: 15px 20px 10px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+/* Top Bar */
+.top-bar {
+    background: white;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.church-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.church-logo-small svg {
+    width: 40px;
+    height: 40px;
+}
+
+.church-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.top-bar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.2s;
+    position: relative;
+}
+
+.icon-btn:hover {
+    background: #f5f5f5;
+}
+
+.notification-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #ff4444;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 5px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: background 0.2s;
+}
+
+.user-menu:hover {
+    background: #f5f5f5;
+}
+
+.user-avatar svg {
+    width: 35px;
+    height: 35px;
+}
+
+.user-name {
+    font-weight: 500;
+    color: #333;
+}
+
+.dropdown-arrow {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Content Section */
+.content-section {
+    padding: 30px;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 25px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    border-top: 4px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.blue-border {
+    border-top-color: #4169E1;
+}
+
+.purple-border {
+    border-top-color: #8B3FF2;
+}
+
+.cyan-border {
+    border-top-color: #00CED1;
+}
+
+.yellow-border {
+    border-top-color: #FFD700;
+}
+
+.orange-border {
+    border-top-color: #FF8C00;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 12px;
+    display: inline-block;
+}
+
+.blue-icon {
+    background: #E6F0FF;
+}
+
+.purple-icon {
+    background: #F0E6FF;
+}
+
+.cyan-icon {
+    background: #E0F7FA;
+}
+
+.yellow-icon {
+    background: #FFF9E6;
+}
+
+.orange-icon {
+    background: #FFE6CC;
+}
+
+.feature-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.feature-description {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Analytics Dashboard */
+.alert-banner {
+    background: #FFE6E6;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    color: #D32F2F;
+    font-size: 0.95rem;
+}
+
+.alert-banner a {
+    color: #7B3FF2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.dashboard-header {
+    background: linear-gradient(135deg, #D4A017 0%, #B8860B 100%);
+    padding: 25px 30px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.dashboard-title-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.dashboard-icon {
+    font-size: 2rem;
+}
+
+.dashboard-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.dashboard-date {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.calendar-btn {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid transparent;
+}
+
+.yellow-stat {
+    border-top-color: #D4A017;
+}
+
+.green-stat {
+    border-top-color: #4CAF50;
+}
+
+.stat-number {
+    font-size: 3rem;
+    color: #D4A017;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.green-stat .stat-number {
+    color: #4CAF50;
+}
+
+.stat-label {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.stat-change {
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.stat-change.positive {
+    color: #4CAF50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-wrapper {
+        flex-direction: column;
+    }
+    
+    .login-left-panel {
+        flex: 0 0 200px;
+    }
+    
+    .logo-container {
+        padding: 20px;
+    }
+    
+    .church-logo svg {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .sidebar {
+        width: 100%;
+        height: auto;
+    }
+    
+    .dashboard-wrapper {
+        flex-direction: column;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+}
